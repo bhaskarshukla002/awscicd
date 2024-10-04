@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: <TASK_DEFINITION>
+        TaskDefinition: "arn:aws:ecs:ap-south-1:590183908228:service/Demo_Cluster/ecs-demo-service-with-alb-03"
         LoadBalancerInfo:
-          ContainerName: "ecs"
+          ContainerName: "latest"
           ContainerPort: 80
